@@ -7,44 +7,51 @@
 
 body{
 font-family: Arial;
-background-color:#f2f2f2;
+background:
+linear-gradient(135deg,#4CAF50,#2e7d32):
 text-align:center;
+padding-top:40px;
 }
 
 .container{
 background:white;
-width:350px;
+width:380px;
 margin:auto;
-padding:20px;
-border-radius:10px;
-box-shadow:0px 0px 10px grey;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,2);
+}
+
+h2{
+color:#333;
 }
 
 input, textarea{
-width:90%;
-padding:8px;
+width:92%;
+padding:10px;
 margin:8px;
-border-radius:5px;
-border:1px solid grey;
+border-radius:6px;
+border:1px solid#ccc;
 }
 
 button{
 background-color:#4CAF50;
 color:white;
-padding:10px;
+padding:12px;
 border:none;
-border-radius:5px;
+border-radius:6px;
 width:95%;
 font-size:16px;
+cursor:pointer;
 }
 
 button:hover{
-background-color:#45a049;
+background:#388e3c;
 }
 
 .logo{
-width:120px;
-margin-bottom:10px;
+width:100px;
+margin-bottom:15px;
 }
 
 </style>
@@ -63,6 +70,11 @@ margin-bottom:10px;
 
 <form 
 action="https://formsubmit.co/ochiengrefance@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha"
+value="false">
+<input type="hidden" name="_template"
+value="table">
 
 <label>Name</label><br>
 <input type="text" name="name" required>
